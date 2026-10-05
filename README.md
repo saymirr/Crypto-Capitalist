@@ -4,7 +4,7 @@
 
 An idle tycoon game in the style of AdVenture Capitalist, set in the crypto world. Start with one Satoshi Faucet and build up to running your own blockchain.
 
-Play money only. No real coins, wallets or exchanges are involved.
+Play money only. There are no tokens, nothing to buy and no real exchanges. Connecting a Solana wallet is optional and only puts your score on the global leaderboard: you sign a plain text message, which moves no funds and approves no transaction.
 
 ## Play
 
@@ -20,5 +20,8 @@ To run it offline, download `index.html` and open it in any modern browser. Ever
 - **Upgrades:** each one triples the profit of one business or of all of them.
 - **Whale alerts:** a button appears at random and gives you either a 2× bull run or a cash tip.
 - **Hard fork:** resets your progress in exchange for Diamond Hands. Each one adds 2% to all profits permanently.
+- **Leaderboard:** optionally connect a Solana wallet (Phantom, Solflare, Backpack and other standard wallets) to put your lifetime earnings on the global top 50. Scores are self-reported: the signature proves who owns the wallet, not how the score was earned.
+
+The leaderboard backend is a small Cloudflare Worker with a D1 database in [`leaderboard/`](leaderboard/). Its README covers local development and deployment.
 
 The background is a night-time crypto city. A tower lights up for each business you own.

@@ -1,0 +1,21 @@
+# Cloudflare Worker for the Crypto Capitalist global leaderboard.
+# Docs: https://developers.cloudflare.com/workers/wrangler/configuration/
+
+name = "crypto-capitalist-leaderboard"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# Free *.workers.dev URL, e.g. https://crypto-capitalist-leaderboard.<your-subdomain>.workers.dev
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "crypto-capitalist-leaderboard"
+# Run `npx wrangler d1 create crypto-capitalist-leaderboard` and paste the id it prints here.
+# Local development (`npm run dev`, `npm run db:local`) works with this placeholder as-is.
+database_id = "REPLACE_WITH_DATABASE_ID"
+
+[vars]
+# Comma-separated list of web origins allowed to call the API from a browser (CORS).
+# Local development overrides this in .dev.vars (copy .dev.vars.example).
+ALLOWED_ORIGINS = "https://saymirr.github.io"
