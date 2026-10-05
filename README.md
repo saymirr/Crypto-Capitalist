@@ -1,12 +1,16 @@
 # Crypto Capitalist
 
+**[▶ Play in your browser](https://saymirr.github.io/Crypto-Capitalist/)**
+
 An idle tycoon game in the style of AdVenture Capitalist, set in the crypto world. Start with one Satoshi Faucet and build up to running your own blockchain.
 
 Play money only. No real coins, wallets or exchanges are involved.
 
 ## Play
 
-Open `index.html` in any modern browser. Everything is in that one file and it needs no build step or server. Progress saves in your browser's local storage.
+Play it at **https://saymirr.github.io/Crypto-Capitalist/**. It works on desktop and phone and needs no install or sign-up. Progress saves in your browser's local storage.
+
+To run it offline, download `index.html` and open it in any modern browser. Everything is in that one file, so there's no build step or server.
 
 ## How it works
 
